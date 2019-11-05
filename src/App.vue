@@ -13,12 +13,14 @@
 import Navbar from "./components/Navbar.vue";
 import Snackbar from "./components/Snackbar.vue";
 import * as store from "./plugins/store";
+import { i18n } from "./plugins/i18n";
 const CookieLaw = require("vue-cookie-law");
 
 export default {
   components: { Navbar, Snackbar, CookieLaw },
   beforeMount() {
     ((this as any).$vuetify.theme as any).dark = store.dark();
+    document.title = i18n.t("title") as string;
   }
 };
 </script>
