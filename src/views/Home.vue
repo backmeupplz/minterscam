@@ -38,9 +38,11 @@ export default class Home extends Vue {
     this.scamBalance = await web3.eth.getBalance(
       "0xB6422d505c27A0548ef9fD5F1Ee09195d0292e54"
     );
+    this.scamBalance = web3.utils.fromWei(this.scamBalance, "ether");
     this.notScamBalance = await web3.eth.getBalance(
       "0x1DB5bDE13E84Aa0f84282b73dBE92C5a4354fB29"
     );
+    this.notScamBalance = web3.utils.fromWei(this.notScamBalance, "ether");
   }
 }
 </script>
