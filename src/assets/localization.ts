@@ -1,10 +1,10 @@
 export const messages = {
   ru: {
-    title: 'Темлейт фронтенда',
+    title: 'Минтер — скам',
     notFound: 'Страница не найдена',
   },
   en: {
-    title: 'Frontend template',
+    title: 'Minter — scam',
     notFound: 'Page not found',
   },
 }
