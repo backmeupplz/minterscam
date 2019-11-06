@@ -46,3 +46,9 @@ export default class Home extends Vue {
   }
 }
 </script>
+
+<style>
+a {
+  word-wrap: break-word !important;
+}
+</style>
