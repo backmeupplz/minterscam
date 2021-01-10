@@ -7,6 +7,8 @@
       v-flex(xs12 md10)
         .headline.pb-4
           span {{$t("home.info")}}
+        strong
+          p {{$t("end")}}
         p(v-for='premise in $t("home.premises")' v-html='premise')
         h2 {{$t("scam")}}
         h3
@@ -20,29 +22,29 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import * as store from "../plugins/store";
-import Component from "vue-class-component";
-import { i18n } from "../plugins/i18n";
-import Web3 from "web3";
+import Vue from 'vue'
+import * as store from '../plugins/store'
+import Component from 'vue-class-component'
+import { i18n } from '../plugins/i18n'
+import Web3 from 'web3'
 const web3 = new Web3(
-  "https://mainnet.infura.io/v3/dd80994b42d540daa7c17d01bfbacd6d"
-);
+  'https://mainnet.infura.io/v3/dd80994b42d540daa7c17d01bfbacd6d'
+)
 
 @Component
 export default class Home extends Vue {
-  scamBalance = "~";
-  notScamBalance = "~";
+  scamBalance = '~'
+  notScamBalance = '~'
 
   async mounted() {
     this.scamBalance = await web3.eth.getBalance(
-      "0xB6422d505c27A0548ef9fD5F1Ee09195d0292e54"
-    );
-    this.scamBalance = web3.utils.fromWei(this.scamBalance, "ether");
+      '0xB6422d505c27A0548ef9fD5F1Ee09195d0292e54'
+    )
+    this.scamBalance = web3.utils.fromWei(this.scamBalance, 'ether')
     this.notScamBalance = await web3.eth.getBalance(
-      "0x1DB5bDE13E84Aa0f84282b73dBE92C5a4354fB29"
-    );
-    this.notScamBalance = web3.utils.fromWei(this.notScamBalance, "ether");
+      '0x1DB5bDE13E84Aa0f84282b73dBE92C5a4354fB29'
+    )
+    this.notScamBalance = web3.utils.fromWei(this.notScamBalance, 'ether')
   }
 }
 </script>

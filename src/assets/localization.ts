@@ -1,5 +1,7 @@
 export const messages = {
   ru: {
+    end:
+      'Спор закончен 10 января 2021 года. По состоянию на 10 января 2021 года, 1 BIP можно продать за $0.0011. Это в 54 раза ниже цены ICO или на 98.2% меньше, чем цена ICO. То есть инвесторы, которые доверились команде Минтера потеряли больше 98% своих средств, а на каждый вложенный доллар они получили 2 цента. Можете проверить транзакции на кошельках ниже — победители (сделавшие ставку на "Минтер — скам") получили свои ставки назад и пропорционально ставки проигравших (сделавших ставку на "Минтер — не скам").',
     title: 'Ставки на Минтер',
     notFound: 'Страница не найдена',
     cookie: {
@@ -25,6 +27,8 @@ export const messages = {
     opensource: 'У этого сайта открытый исходный код.',
   },
   en: {
+    end:
+      'The bet is resolved on January 10th, 2021. On January 10th, 2021 1BIP can be sold for $0.0011. It is 54 times less than the ICO cost or 98.2% less that the ICO cost. I.e. investors who trusted Minter lost over 98% of their money and got 2 cents for every 1 dollar they invested. You can check the transactions on the wallets below — winners (who said that Minter was a scam) got their bets back and proportional bets of the losers (who said that Minter was not a scam).',
     title: 'Minter Bets',
     notFound: 'Page not found',
     cookie: {
@@ -37,7 +41,7 @@ export const messages = {
       premises: [
         'Premise is simple: we have two Ethereum wallets on this website — one to bet on Minter not being a scam, one to bet on Minter being a scam. Participants send money to one of the addresses below to bet on whether BIP price is going to be above (not scam) or below (scam) the ICO price of $0.06 for 1 BIP by January 10th. 2021.',
         'On January 10th, 2021, administrators of <a href="https://t.me/mcafee_approves">Avocado Approves</a> community backed by the channel <a href="https://t.me/golden_borodutch">Golden Borodutch</a> will evaluate the buy price of BIP using <a href="https://minter.1001btc.com/ru/">1001btc.com</a>. In the case when <a href="https://minter.1001btc.com/ru/">1001btc.com</a> is not accessible, administrators have the right to evaluate price of BIP on any open market with the publicly available list of orders and completed deals.',
-        "Whoever wins, takes back their bet and a portion of loosers' bets proportional to the winner's bet. In case if there is no way to identify whether Minter became a scam or not by January 10th, 2021, all betters receive their bets back, minus Ethereum transaction fees. Please, only send bets from your personal addresses, not from exchanges, because the winnings are going to be transferred back to the addresses that submitted bets. You can submit bets until December 10th, 2020.",
+        "Whoever wins, takes back their bet and a portion of losers' bets proportional to the winner's bet. In case if there is no way to identify whether Minter became a scam or not by January 10th, 2021, all betters receive their bets back, minus Ethereum transaction fees. Please, only send bets from your personal addresses, not from exchanges, because the winnings are going to be transferred back to the addresses that submitted bets. You can submit bets until December 10th, 2020.",
         'This website takes no fees, no cuts, it\'s all for free. We host this website on GitHub Pages for free, hold Ethereum on the wallets for free, it is simply unfair to charge the participants. If you have any further questions, feel free to reach out to the administration of <a href="https://t.me/mcafee_approves">Avocado Approves</a> community.',
         'It is time to bet: no matter what you believe in, you can now earn money if your belief is correct. Participate today, send Ethereum to the following addresses. Capitalize on your decision.',
       ],
